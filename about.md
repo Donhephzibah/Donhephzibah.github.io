@@ -22,4 +22,4 @@ Compositing & fermentation takes place before its granulated, screened and final
 
 ### Contact
 
-You are interested to purchase our products? Check out our [website] (https://crescoenterprise.com). For comments, send us a message to the number +234-705-160-6470 and we will get back to you soon
+You are interested to purchase our products? Check out our [website] (https://crescoenterprise.com). For comments, send us a message to the number (+234-705-160-6470) and we will get back to you soon
