@@ -27,23 +27,28 @@ Log in to the AWS Management Console using the credentials provided on the lab i
 
 # Explore the Groups
 There are 3 groups I're going to focus on:
- - EC2-Admin: Provides permissions to view, start, and stop EC2 instances
- - EC2-Support: Provides read-only access to EC2
- - S3-Support: Provides read-only access to S3
+ - ***EC2-Admin***: Provides permissions to view, start, and stop EC2 instances
+ - ***EC2-Support***: Provides read-only access to EC2
+ - ***S3-Support***: Provides read-only access to S3
+
 **Note**: There are 2 different kinds of policies for these groups:
-   - **Managed policies**: Policies shared among users and/or groups that are pre-built either by AWS or an administrator within the AWS account. When it's updated, the changes to this policy are immediately applied for all users and groups to which it's attached.
-   - **Inline policies**: Policies assigned to just one user or group that are typically used in one-off situations.
+       - **Managed policies**: Policies shared among users and/or groups that are pre-built either by AWS or an administrator within the AWS account. When it's updated, the changes to this policy are immediately applied for all users and groups to which it's attached.
+       - **Inline policies**: Policies assigned to just one user or group that are typically used in one-off situations.
  1.	In the left-hand menu, click **User groups**.
  2.	Click **EC2-Admin**.
  3.	Click **Permissions**, where I'll see EC2-Admin has an inline policy with a set of permissions associated with it.
  4.	Click the plus-sign icon next to the ec2-admin policy to view the policy and see the actions the group is alloId to take (and which resources the action can be taken on) or if it has read-only access.
+
  **Note**: From this policy, I have permission to view, start, and stop EC2 instances on all resources, view elastic load balancers, list metrics, get metric statistics, and describe metrics (which our CloudWatch metrics automatically configured with our EC2 instance). The same permissions apply to our Auto Scaling service.
+
  5.	Click **Cancel**.
  6.	In the left-hand menu, click **User groups**.
  7.	Click **EC2-Support**.
  8.	Click **Permissions**, where I'll see it has a managed policy created by AWS.
  9.	Click the plus-sign icon next to the AmazonEC2ReadOnlyAccess policy.
+
  **Note**: This group can describe EC2 instances, elastic load balancers, CloudWatch metrics, and our Auto Scaling configurations. It doesn't allow us to stop, start, or create EC2 instances. It's a read-only policy, meaning I can view what's happening inside EC2, but I can't make changes to the resource.
+ 
  10. Click **Cancel**.
  11. In the left-hand menu, click **User groups**.
  12. Click **S3-Support**.
